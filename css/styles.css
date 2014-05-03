@@ -14,14 +14,14 @@ h2 {
 	text-align:left;
 }
 #loading {
-	background: url('/angular/img/loading.gif');
+	background: url('/intherapii/img/loading.gif');
 	position:relative;
 	width:32px;
 	height:32px;
 	margin:35% auto 0 auto;
 }
 #contentLoader {
-	background: url('/angular/img/loading.gif') no-repeat;
+	background: url('/intherapii/img/loading.gif') no-repeat;
 	position:relative;
 	padding:5px 0 0 35px;
 	height:27px;
@@ -77,7 +77,7 @@ ul {
 	height:50px;
 }
 #topBar ul li#navPreferences {
-	background:url('/angular/img/sprite.png') -1px 0 no-repeat;
+	background:url('/intherapii/img/sprite.png') -1px 0 no-repeat;
 	width:26px;
 	height:25px;
 	display:block;
@@ -151,7 +151,7 @@ li {
 	border-radius:5px;
 }
 #topBar ul li#navAlerts {
-	background:url('/angular/img/sprite.png') -27px 0 no-repeat;
+	background:url('/intherapii/img/sprite.png') -27px 0 no-repeat;
 	width:26px;
 	height:25px;
 	display:block;
@@ -211,7 +211,7 @@ nav {
 	z-index:1;
 }
 .pageWrap {
-	background:url('/angular/img/bg_pageWrap.gif') 343px 0 repeat-y;
+	background:url('/intherapii/img/bg_pageWrap.gif') 343px 0 repeat-y;
 	width:920px;
 	overflow:visible;
 }
@@ -508,7 +508,7 @@ nav ul.customTabs li a:hover {
 	margin:10px 0;
 }
 #loginLogo {
-	background:url('/angular/img/intherapii.png');
+	background:url('/intherapii/img/intherapii.png');
 	width:200px;
 	height:63px;
 	position:absolute;
@@ -526,7 +526,7 @@ nav ul.customTabs li a:hover {
 	text-indent:-9999px;
 }
 #inTherapii {
-	background:url('/angular/img/intherapii-logo.png');
+	background:url('/intherapii/img/intherapii-logo.png');
 	width:170px;
 	height:53px;
 	position:absolute;
@@ -670,7 +670,7 @@ fieldset {
 }
 .pageAlert {
 	background-color:#F2DEDE;
-	background-image:url('/angular/img/sprite.png');
+	background-image:url('/intherapii/img/sprite.png');
 	background-repeat: no-repeat;
 	background-position:-55px 2px;
 	transition: background-color 250ms ease-in-out;
