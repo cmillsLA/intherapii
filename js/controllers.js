@@ -183,7 +183,7 @@ angular.module('myApp.controllers', [])
 			  type: "GET",
 			  url: 'http://edafeks.dyndns.biz:9090/api/v1/signup/activate?uuid='+uuid,
 			 	success: function(d) {
-					$('#accountActivation').html('<div class="alert alert-success"><p>Your account has been activated, you will be redirected in 5 seconds to the login screen.  If you do not automatically redirect, please <a href="/angular/#/login">click here</a>.</div>');
+					$('#accountActivation').html('<div class="alert alert-success"><p>Your account has been activated, you will be redirected in 5 seconds to the login screen.  If you do not automatically redirect, please <a href="/#/login">click here</a>.</div>');
 			  	$timeout(function() {
 						$location.path('/login').replace();
 						$scope.$apply();
