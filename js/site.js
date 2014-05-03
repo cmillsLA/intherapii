@@ -1,7 +1,7 @@
 /*------ Global ------*/
 function preloadLogo() {
 	heavyImage = new Image(); 
-	heavyImage.src = "/img/intherapii.png";
+	heavyImage.src = "/intherapii/img/intherapii.png";
 }
 // preload logo
 preloadLogo();
@@ -83,7 +83,7 @@ function getCookie(c_name) {
             return unescape(document.cookie.substring(c_start, c_end));
         }
     } else {
-			window.location.href = "/#/login"; // no cookie
+			window.location.href = "/intherapii/#/login"; // no cookie
 			return false;
 		}
 }
