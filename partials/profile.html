@@ -1,0 +1,182 @@
+
+
+		<div class="dropShadow w960">
+			<div class="page innerShadow w960">
+				<div class="p20 mh500 pRel">
+					
+					<div id="contentLoader">Loading</div>
+					
+					<div class="profileContent form-profile dNone">
+						
+							<div id="profileCompleteness" class="dNone pAb">
+								<p>Your profile is <span></span>% complete</p>
+								<div id="profileCompleteGraph">
+									<div id="profileCompleteBar"></div>
+								</div>
+							</div>
+							
+		          <h2>User Profile:</h2>
+
+		          <div class="well" id="profileUserWrap">
+			
+								<form id="profileUserForm">
+									
+								<div class="left">
+								
+								<div class="left w438">
+									<label for="profileFirstName">First Name:</label>
+									<input type="text" id="profileFirstName" name="profileFirstName" />
+									<p id="profileFirstNameP"></p>
+								</div>
+								
+								<div class="right w438">
+									<label for="profileLastName">Last Name:</label>
+									<input type="text" id="profileLastName" name="profileLastName" />
+									<p id="profileLastNameP"></p>
+								</div>
+								
+								<div class="clear"></div>
+								
+								</div>
+								
+								<div class="left">
+								
+								<div class="left w438">
+									<label for="profileEmail">Email:</label>
+									<input type="text" id="profileEmail" name="profileEmail" />
+									<p id="profileEmailP"></p>
+								</div>
+								
+								<div class="right w438">
+									<label for="profileEthnicity">Ethnicity:</label>
+									<select id="profileEthnicity" name="profileEthnicity">
+									</select>
+									<p id="profileEthnicityP"></p>
+								</div>
+								
+								<div class="clear"></div>
+								
+								</div>
+								
+								<div class="left">
+								
+								<label for="profileDOB">Date of Birth:</label>
+								<select id="profileDOBMonth" name="profileDOBMonth">
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+									<option value="04">April</option>
+									<option value="05">May</option>
+									<option value="06">June</option>
+									<option value="07">July</option>
+									<option value="08">August</option>
+									<option value="09">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+								
+								<select id="profileDOBDay" name="profileDOBDay">
+									<option value="01">1</option>
+									<option value="02">2</option>
+									<option value="03">3</option>
+									<option value="04">4</option>
+									<option value="05">5</option>
+									<option value="06">6</option>
+									<option value="07">7</option>
+									<option value="08">8</option>
+									<option value="09">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+								</select>
+								
+								<select id="profileDOBYear" name="profileDOBYear"></select>
+								
+								<p id="profileDOBP"></p>
+								
+								<div class="clear"></div>
+								
+								</div>
+								
+								<div class="clear"></div>
+
+								<p id="profileAge">Age: <span></span></p>
+								
+								<div class="clear"></div>
+								
+
+									<button class="btn btn-primary left profileEdit" ng-click="editUserData($event)">Edit</button>
+									<button class="btn btn-primary left profileCancel dNone" ng-click="cancelUserData($event)">Cancel</button>
+									<button class="btn btn-primary ml12 profileUpdate" disabled ng-click="updateProfileInfo($event, true)" data-id="" data-type="user">Save</button>
+
+							</div>
+							
+							<h2>Authorities</h2>
+							
+							<div class="well">
+								<div id="authorities"></div>
+							</div>
+							
+							<h2>Addresses:</h2>
+							
+							<div class="well pRel" id="profileAddressWrap">
+								
+								<button class="btn btn-primary profileAdd" ng-click="addProfileItem('Address')">Add New [+]</button>
+								
+								<div id="profileAddresses"></div>
+								
+							</div>
+							
+							<h2>Business Information:</h2>
+							
+							<div class="well pRel" id="profileBusinessWrap">
+								
+								<button class="btn btn-primary profileAdd" ng-click="addProfileItem('Business')">Add New [+]</button>
+								
+								<div class="clear"></div>
+								
+								<div id="profileBusinesses"></div>
+								
+							</div>
+							
+							<h2>Contact Information:</h2>
+							
+							<div class="well pRel" id="profileContactWrap">
+								
+								<button class="btn btn-primary profileAdd" ng-click="addProfileItem('Contact')">Add New [+]</button>
+								
+								<div class="clear"></div>
+								
+								<div id="profileContacts"></div>
+								
+							</div>
+							
+							<div class="clear"></div>
+
+					</div>
+				</div>
+			</div>
+		
+	</div>
+  
+</div>
