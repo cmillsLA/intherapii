@@ -1,0 +1,147 @@
+
+
+		<div class="dropShadow w960">
+			<div class="page innerShadow w960">
+				<div class="p20 mh500 pRel">
+					
+					<div id="contentLoader">Loading</div>
+					
+					<div class="profileContent form-patients dNone">
+						
+							<div class="btn btn-primary right" id="patientAdd" ng-click="addNewPatient()">Add New Patient [+]</div>
+
+		          <h2>Patients:</h2>
+							
+							<div class="clear"></div>
+		
+							<p class="normal">Search for a patient above or add a new patient.</p>
+
+							<div class="clear"></div>
+							
+							<div class="pageTable m0">
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									
+									<tr>
+										<th width="35%" align="left">Patient Name</th>
+										<th width="15%" align="left">Patient Phone</th>
+										<th width="30%" align="left">Patient Email</th>
+										<th width="10%" align="left">Age</th>
+										<th width="10%" align="left">Action</th>
+									</tr>
+									
+									<!-- Patient Demo -->
+									<tr data-patient="5" ng-click="showPatientDetail($event)" class="patientDetailBasic">
+										<td>Patient One</td>
+										<td>(555) 555-5555</td>
+										<td>patientone@yevgini.com</td>
+										<td>55</td>
+										<td>Yes</td>
+									</tr>
+									<tr id="patient-5" class="patientDetail dNone">
+										<td class="gray" colspan="6">
+											<p class="patientEmail left w50"><strong>Patient One</strong><br />
+												555 Main St<br />
+												Los Angeles, CA 90014<br />
+												Age: 55</p>
+											<div class="right w50 taRight">
+												<p class="patientContact dBlock">
+													<a href="mailto:patientone@yevgini.com"><strong>patientone@yevgini.com</strong></a><br />
+													<strong>(555) 555-55555</strong>
+												</p>
+												
+												<div class="btn" data-patient="6" ng-click="editPatientDetail($event)">Edit</div>
+											</div>
+										</td>
+									</tr>
+									<!-- /Patient Demo -->
+									
+									<!-- Patient Demo -->
+									<tr data-patient="6" class="pageTableEven patientDetailBasic" ng-click="showPatientDetail($event)">
+										<td>Patient Two</td>
+										<td>(555) 555-5555</td>
+										<td>patienttwo@yevgini.com</td>
+										<td>55</td>
+										<td>Yes</td>
+									</tr>
+									<tr id="patient-6" class="patientDetail dNone">
+										<td class="gray" colspan="6">
+											<p class="patientEmail left w50"><strong>Patient Two</strong><br />
+												555 Main St<br />
+												Los Angeles, CA 90014<br />
+												Age: 55</p>
+											<div class="right w50 taRight">
+												<p class="patientContact dBlock">
+													<a href="mailto:patientone@yevgini.com"><strong>patienttwo@yevgini.com</strong></a><br />
+													<strong>(555) 555-55555</strong>
+												</p>
+												
+												<div class="btn" data-patient="6" ng-click="editPatientDetail($event)">Edit</div>
+											</div>
+										</td>
+									</tr>
+									<!-- /Patient Demo -->
+									
+									<!-- Patient Demo -->
+									<tr data-patient="7" ng-click="showPatientDetail($event)" class="patientDetailBasic">
+										<td>Patient Three</td>
+										<td>(555) 555-5555</td>
+										<td>patientthree@yevgini.com</td>
+										<td>55</td>
+										<td>Yes</td>
+									</tr>
+									<tr id="patient-7" class="patientDetail dNone">
+										<td class="gray" colspan="6">
+											<p class="patientEmail left w50"><strong>Patient Three</strong><br />
+												555 Main St<br />
+												Los Angeles, CA 90014<br />
+												Age: 55</p>
+											<div class="right w50 taRight">
+												<p class="patientContact dBlock">
+													<a href="mailto:patientone@yevgini.com"><strong>patientthree@yevgini.com</strong></a><br />
+													<strong>(555) 555-55555</strong>
+												</p>
+												
+												<div class="btn" data-patient="6" ng-click="editPatientDetail($event)">Edit</div>
+											</div>
+										</td>
+									</tr>
+									<!-- /Patient Demo -->
+									
+								</table>
+							</div>
+							
+							<div class="left">
+								<select class="dBlock paginationAmt">
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>
+							
+							<div class="right">
+							
+							<p class="paginationResults right wauto">Showing results 30-40 of 50</p>
+							
+							<div class="clear"></div>
+							
+							<div class="pagination right m0 p0">
+								<span>&laquo; Prev</span>
+								<span>1</span>
+								<span>2</span>
+								<span class="active">3</span>
+								<span>4</span>
+								<span>5</span>
+								<span>Next &raquo;</span>
+							</div>
+							
+							</div>
+							
+							<div class="clear"></div>
+							
+					</div>
+				</div>
+			</div>
+		
+	</div>
+  
+</div>

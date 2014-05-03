@@ -1,0 +1,77 @@
+<div id="home" class="w960 pRel">
+
+	<div id="loginShadow" class="dropShadow b10 pageWrap">
+
+		<div class="loginTabs">
+			<ul class="customTabs">
+		 		<li id="loginCreate" class="loginTab" ng-click="toggleLogin($event)">Create Account</li>
+				<li id="loginUser" class="loginTab active" ng-click="toggleLogin($event)">Login</li>
+		 	</ul>
+		</div>
+
+		<div id="loginForm">
+			<div id="loginLogo"><a href="#login">In Therapii - Login</a></div>
+			<div class="well form-signin">
+        <form class="b10" name="form-signin" id="form-signin" ng-submit="submitLogin()">
+          <h2 class="form-signin-heading">Log in to Therapii</h2>
+          <input type="text" class="input-block-level" placeholder="Email address" id="loginUsername" name="loginUsername" />
+          <input type="password" class="input-block-level" placeholder="Password" id="loginPassword" name="loginPassword" />
+          <input class="btn btn-large btn-primary dBlock" type="submit" id="btnLogin" value="Sign In" />
+          <!--<label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>-->
+          <div class="lightbox-open link" ng-click="lightbox($event)" data-target="forgotPassword" data-desc="password">Forgot Password</div>
+        </form>
+      </div>
+
+			<div class="well form-register">
+        <form class="b10" name="form-register" id="form-register" ng-submit="submitRegistration()">
+          <h2 class="form-signin-heading">Create your Therapii account</h2>
+          <input type="text" class="input-block-level" placeholder="First Name" id="loginFirst" name="loginFirst" />
+          <input type="text" class="input-block-level" placeholder="Last Name" id="loginLast" name="loginLast" />
+          <input type="text" class="input-block-level" placeholder="Email Address" id="loginEmail" name="loginEmail" />
+
+          <fieldset class="pRel">
+						<ul id="pwStrength">
+							<li id="pwShort" class="alert-error pwStrength dNone">Too Short</li>
+							<li id="pwWeak" class="alert-error pwStrength dNone">Weak</li>
+							<li id="pwGood" class="alert pwStrength dNone">Good</li>
+							<li id="pwStrong" class="alert-success pwStrength dNone">Strong</li>
+						</ul>
+            <input type="password" class="input-block-level signupPassword" placeholder="Password" id="signupPassword" name="signupPassword" ng-keyup="checkPwStrength($event)" />
+            <input type="password" class="input-block-level signupPassword" placeholder="Confirm Password" id="signupPasswordConfirm" name="signupPasswordConfirm" />
+						<label for="signupPassword"><em>Your password must contain at least 1 uppercase, 1 lowercase letter and 1 special character.</em></label>
+          </fieldset>
+
+          <input class="btn btn-large btn-primary dBlock" type="submit" disabled id="loginRegister" value="Create Account" />
+
+          <label class="checkbox" id="registerTC">
+            <input type="checkbox" value="terms-conditions" id="tcCheck" ng-click="toggleRegister()"> I accept the <a href="#">Terms &amp; Conditions</a>
+          </label>
+
+        </form>
+      </div>
+
+	</div>
+
+	</div>
+
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="dNone"></div>
+<!-- /Overlay -->
+
+<!-- Forgot Password dialog -->
+<div class="lightbox lightbox-sm dNone" id="forgotPassword">
+<span class="lightbox-close" ng-click="closeLightbox()">&times;</span>
+<h2>Password Recovery</h2>
+<div class="well">
+	<form id="forgotPasswordForm" ng-submit="forgotPasswordSubmit()">
+		<label>Enter your email address:</label>
+		<input type="text" name="forgotPasswordEmail" id="forgotPasswordEmail" class="input-block-level" placeholder="Email Address" />
+		<input type="submit" value="Submit" id="forgotPasswordSubmit" class="btn btn-primary dBlock" />
+	</form>
+</div>
+</div>
+<!-- /Forgot Password dialog -->
